@@ -6,9 +6,12 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import echarts from 'echarts';
+import './assets/icon/iconfont.css';
+import Mock from './mock'
+Mock.bootstrap();
 
 
-Vue.use(ElementUI, { size: 'small', zIndex: 3000 });
+Vue.use(ElementUI);
 Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false
@@ -20,3 +23,13 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+//   [class^="el-icon-third"],
+//   [class*=" el-icon-third"]/*这里有空格*/
+// {
+//   font-family: "iconfont" !important;
+//   font-size: 16px;
+//   font-style: normal;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
