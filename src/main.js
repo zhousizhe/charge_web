@@ -7,11 +7,13 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import echarts from 'echarts';
 import './assets/icon/iconfont.css';
-import Mock from './mock'
+import Mock from './mock';
+import BaiduMap from 'vue-baidu-map';
 Mock.bootstrap();
 
 
 Vue.use(ElementUI);
+Vue.use(BaiduMap,{ak: 'apVgGeyuozEHouxjbG0jMATum0QuUQpE'});
 Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false
